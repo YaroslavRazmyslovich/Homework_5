@@ -124,9 +124,8 @@ age = sorted(set( [persons [index]['age'] for index in range (len(persons))] ))
 print (f'список всех возрастов: {age}')
 
 from collections import Counter
-from turtle import xcor
 counter_name = Counter (name)
-print (counter_name.most_common(3))
+print (f"самые популярные имена: {counter_name.most_common(3)}")
 
 print ('Имена которые начинаются на букву "M":', end = ' ')
 for index in range(len(persons)):
