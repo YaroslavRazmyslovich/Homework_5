@@ -129,8 +129,7 @@ print (f"самые популярные имена: {counter_name.most_common(3
 
 print ('Имена которые начинаются на букву "M":', end = ' ')
 for index in range(len(persons)):
-    if persons[index]['gender'] == 'male':
-        if persons[index]['age'] >= 35:
+    if persons[index]['gender'] == 'male' and persons[index]['age'] >= 35:
             name_letters = list(persons[index]['name'])
             if name_letters[0] == 'M':
                 print (persons[index]['name'], end = ' ')
