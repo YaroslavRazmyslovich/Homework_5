@@ -23,18 +23,18 @@ for index, (a ,b) in enumerate (zip (leg_a, leg_b), 1):
 
 # Вариант с while и счетчиком индекса
 print ('Второй вариант решения')
-i = 0
-while i <= len(legs) - 1:
+index = 0
+while index <= len(legs) - 1:
     try:
-        a, b = float (legs[i]), float (legs[i+1])
+        a, b = float (legs[index]), float (legs[index+1])
         c = (a ** 2 + b ** 2) ** 0.5
         S = (a * b) / 2
     except ValueError:
-        i += 2
-        print (f'NonNumberError: проверьте введенные данные катетов {i//2} треугольника')
+        index += 2
+        print (f'NonNumberError: проверьте введенные данные катетов {index//2} треугольника')
     else:
-        i += 2
-        print (f'Треугольник {i//2} с катетами {a} и {b} имеет площадь {S} и гипотенузу {c}')
+        index += 2
+        print (f'Треугольник {index//2} с катетами {a} и {b} имеет площадь {S} и гипотенузу {c}')
 
 # Вариант с циклом for
 print ('Третий вариант решения')
