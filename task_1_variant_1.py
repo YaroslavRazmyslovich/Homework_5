@@ -14,6 +14,6 @@ for index, (a ,b) in enumerate (zip (leg_a, leg_b), 1):
         c = (a ** 2 + b ** 2) ** 0.5
         S = (a * b) / 2
     except ValueError:
-        print ('NonNumberError: проверьте введенные данные')
-        break
-    print (f'Треугольник {index} с катетами {a} и {b} имеет площадь {S} и гипотенузу {c}')
+        print (f'NonNumberError: проверьте введенные данные катетов {index} треугольника')
+    else:
+        print (f'Треугольник {index} с катетами {a} и {b} имеет площадь {S} и гипотенузу {c}')
